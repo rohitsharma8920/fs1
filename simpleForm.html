@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="/register" method="post">
+
+        <label place>First Name:</label>
+        <input type="text" name="fname" placeholder="Enter your firstName "><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lname" placeholder="Enter your lastName " required><br><br>
+
+        <Label>Current Year : </Label>
+        <select name="year" id="year">
+            <option value="select"> --Select--</option>
+            <option value="1st year">1st Year</option>
+            <option value="2nd year">2nd year</option>
+            <option value="3rd year">3rd year</option>
+            <option value="4th year">4th year</option>
+        </select><br><br>
+
+
+        <label>Skills : </label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="css">CSS
+        <input type="checkbox" name="skills" value="js">Java Script
+        <input type="checkbox" name="skills" value="rect">Rect <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" ><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="abc@gmail.com"><br><br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone" placeholder="+91-XXXXXXXX89"><br><br>
+
+        <label>Course:</label>
+        <select name="course" required>
+            <option value="">--Select--</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="B.A">B.A</option>
+            <option value="B.Com">B.Com</option>
+            <option value="B.Tech">B.Tech</option>
+        </select>
+        <br><br>
+
+        <label for="resume"> upload Resume : </label>
+        <input type="file" name="resume" id="resume"><br><br>
+
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        
+    </form>
+</body>
+</html>
